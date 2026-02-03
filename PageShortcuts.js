@@ -62,7 +62,7 @@ class Shortcut extends Object{
     }
   }
   press_key(key){
-    if (this.keys[key] === true){ // not 100% sure this is needed anymore due to check in on_keydown
+    if (this.keys[key] === true){
       delete this.unpressed_keys[key];
       if (Object.keys(this.unpressed_keys).length === 0){
         this.fn();
@@ -70,7 +70,7 @@ class Shortcut extends Object{
     }
   }
   unpress_key(key){
-    if (this.keys[key] === true){ // not 100% sure this is needed anymore due to check in on_keydown
+    if (this.keys[key] === true){
       this.unpressed_keys[key] = true;
     }
   }
