@@ -1,0 +1,25 @@
+/* setup for absolute postioning, and to show/hide only as needed, change these rules as required, although you might want to keep the padding buffer */
+#Drift{
+  padding: 3px; /* buffer space to make mouseover a bit more forgiving and let users to be less precise */
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5); /* makes buffer space easier to see */
+  position: absolute;
+  z-index:10000000;
+  display: none;
+}
+
+#Drift.Drift_active{
+  display:block;
+}
+
+#Drift.temp_hide,
+#Drift.perma_hide{
+  display: none !important;
+}
+
+#Drift_contents{
+    background-color:teal;
+    color:white;
+    display:flex;
+    flex-direction:column;
+}

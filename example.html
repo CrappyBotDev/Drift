@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Drift Example - Overlapping</title>
+  <link rel = "stylesheet"
+    type="text/css"
+    href = "example.css" />
+  <link rel = "stylesheet"
+    type="text/css"
+    href = "example_drift.css" />
+</head>
+
+<body>
+
+  <div class="explainer">
+    <div class="explainer_title">
+      Drift Example - Overlapping
+
+    </div>
+    <div class="explainer_text">
+      This example immediately modifies / hides the drift menu on activation / deactivation of anchors.  Because of this, it requires the drift element to be positioned overlapping the anchor to be usable. Otherwise the drift element will disappear / its contents will change when anchors deactivate as you try to mouse over to it.  For an example of a setup that does not require this overlapping, see "Drift Example - Free Floating".
+    </div>
+    <a href="./example_free_float.html">
+      Drift Example - Free Floating
+    </a>
+  </div>
+
+  <div class="centered">
+    <div class="anchor_container Drift_anchor" id="anchor_container_0">
+      Anchor 0
+      <div class="anchor_container Drift_anchor" id="anchor_container_1">
+        Anchor 1
+      </div>
+      <div class="anchor_container Drift_anchor" id="anchor_container_2">
+        Anchor 2
+      </div>
+    </div>
+  </div>
+  
+  <div id="scroll_container">
+    <div id="scroll_window">
+      <div class="anchor_container Drift_anchor" id="anchor_container_3">
+        Anchor 3
+        <div class="anchor_container Drift_anchor" id="anchor_container_4">
+          Anchor 4
+        </div>
+      </div>
+      <div class="anchor_container Drift_anchor" id="anchor_container_5">
+        Anchor 5
+        <div class="anchor_container Drift_anchor" id="anchor_container_6">
+          Anchor 6
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="Drift">
+    <div id="Drift_contents">
+    </div>
+  </div>
+
+  <div id="hide_inactive">
+        <div id="anchor_container_0_hover" class="">
+      Hovering Anchor 0
+    </div>
+    <div id="anchor_container_1_hover" class="">
+      Hovering Anchor 1
+    </div>
+    <div id="anchor_container_2_hover" class="">
+      Hovering Anchor 2
+
+    </div>
+    <div id="anchor_container_3_hover" class="">
+      Hovering Anchor 3
+
+    </div>
+    <div id="anchor_container_4_hover" class="">
+      Hovering Anchor 4
+
+    </div>
+    <div id="anchor_container_5_hover" class="">
+      Hovering Anchor 5
+
+    </div>
+    <div id="anchor_container_6_hover" class="">
+      Hovering Anchor 6
+    </div>
+  </div>
+  <script src="./Drift.js"></script>
+  <script src="./PageShortcuts.js"></script>
+  <script src="./example.js"></script>
+</body>
+</html>
