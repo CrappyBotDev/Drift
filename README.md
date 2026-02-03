@@ -2,6 +2,10 @@
 javascript code for designating "anchor" elements (not to be confused with anchor tags / links) that trigger events on mouseenter / mouseleave (emulating hover) and a floating element to go with them
 
 # How it Works:
+the relevant files in this repo are:
+- `Drift.js` (Drift class that sets up events),
+- `example_drift.css` (some styling, mostly the padding, and temphide/permahide stuff)
+- `example.js` (example set up)
 there are anchor elements (`Drift.anchor_elems` - which trigger events on mouseenter / mouseleave), and the drift element (`Drift.drift_elem` - which also triggers events on mouseenter / mouseleave)
 Events:
 - `enter_anchor` / `leave_anchor` - when mouse goes in or out of an anchor element
@@ -13,7 +17,7 @@ Set up your anchors / drift element either in html (add whatever class you set i
 
 
 # Examples
-Examples are provided in the form of a Chrome extensions. To load it:
+This repo is itself a Chrome extension example. To load it:
 
     open the Chrome browser
     go to the extensions page
