@@ -7,6 +7,7 @@ the relevant files in this repo are:
 - `example_drift.css` (some styling, mostly the padding, and temphide/permahide stuff)
 - `example.js` (example set up)
 there are anchor elements (`Drift.anchor_elems` - which trigger events on mouseenter / mouseleave), and the drift element (`Drift.drift_elem` - which also triggers events on mouseenter / mouseleave)
+
 Events:
 - `enter_anchor` / `leave_anchor` - when mouse goes in or out of an anchor element
 - `activate_anchor` / `deactivate_anchor` - when an anchor is activated / deactivated (activation happens when mouse enters an inactive anchor, deactivation happens when the mouse exits that anchor into an element that is not the drift element, or when the mouse exits the drift element into an element that is not that anchor)
